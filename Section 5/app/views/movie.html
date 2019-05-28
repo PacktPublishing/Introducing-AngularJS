@@ -1,0 +1,9 @@
+<div class="movie">
+  <h3 ng-bind="movie.title"></h3>
+  <img ng-src="{{movie.image}}">
+  <p ng-class="{'loading-duck': loading}">
+    <span ng-bind="movie.abstract"></span>
+    <span ng-bind="movie.abstractSource"></span>
+    <span><a href="https://duckduckgo.com/">Results via DuckDuckGo</a></span>
+  </p>
+</div>

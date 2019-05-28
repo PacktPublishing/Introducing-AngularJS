@@ -1,0 +1,23 @@
+<h1 ng-bind="movie.title"></h1>
+<div>
+  <div class="row">
+    <h2>Synopsis</h2>
+    <img width="100" align="left" ng-src="{{movie.image}}">
+    <p ng-bind="movie.description"></p>
+  </div>
+  <div class="row">
+    <h2>Cast</h2>
+    <ul>
+      <li ng-repeat="actor in movie.cast" ng-bind="actor"></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="movie">
+      <p>
+        <span ng-bind="movie.abstract"></span>
+        <span ng-bind="movie.abstractSource"></span>
+        <span><a href="https://duckduckgo.com/">Results via DuckDuckGo</a></span>
+      </p>
+    </div>
+  </div>
+</div>
